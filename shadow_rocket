@@ -15,6 +15,11 @@ private-ip-answer = true
 
 [Rule]
 GEOIP,CN,DIRECT
+RULE-SET,SYSTEM,DIRECT
+DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/private.txt,DIRECT
+DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.txt,DIRECT
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/cncidr.txt,DIRECT
+RULE-SET,LAN,DIRECT
 FINAL,PROXY
 
 [MITM]
